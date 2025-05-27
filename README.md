@@ -14,9 +14,8 @@ The **Parse Tree Visualizer** is a command-line utility developed in **C++** to 
 
 - **Language:** C++, HTML, JS, CSS
 - **Visualization:** d3.js
-- **Parser:** Custom Recursive Descent (or Flex/Bison if extended)
-- 
-
+- **Parser:** Custom Recursive Descent
+  
 ## Usage
 
 1. **Compile the program:**
