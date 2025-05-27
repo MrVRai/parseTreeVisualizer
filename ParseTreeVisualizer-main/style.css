@@ -1,0 +1,48 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#tree {
+    width: 100%;
+    height: 600px;      /* or any height you prefer */
+    overflow: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/* .node circle {
+    fill: #69b3a2;
+    stroke: black;
+    stroke-width: 1.5px;
+} */
+
+.node circle {
+    filter: drop-shadow(0 2px 8px rgba(80, 80, 80, 0.15));
+    transition: filter 0.2s, stroke 0.2s;
+}
+
+.node circle.highlighted {
+    filter: drop-shadow(0 0 16px #ffbe0b);
+    stroke: #ffbe0b !important;
+    stroke-width: 3 !important;
+}
+
+.highlighted {
+    stroke: #ff4136 !important;
+    stroke-width: 4px !important;
+    filter: drop-shadow(0 0 8px #ff4136);
+}
+
+.node text {
+    font: 14px sans-serif;
+    fill: #333;
+}
+
+.link {
+    fill: none;
+    stroke: #999;
+    stroke-width: 2px;
+}

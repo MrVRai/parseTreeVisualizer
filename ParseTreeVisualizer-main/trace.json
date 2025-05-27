@@ -1,0 +1,19 @@
+[
+    {
+        "action": "call",
+        "function": " main"
+    },
+    {
+        "action": "cout"
+    },
+    {
+        "action": "cout"
+    },
+    {
+        "action": "return_stmt"
+    },
+    {
+        "action": "return",
+        "function": " main"
+    }
+]

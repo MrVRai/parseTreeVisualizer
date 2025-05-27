@@ -1,0 +1,27 @@
+[
+    {
+        "name": "square",
+        "scope": "global",
+        "type": "int (function)"
+    },
+    {
+        "name": "x",
+        "scope": "square",
+        "type": "int"
+    },
+    {
+        "name": "square",
+        "scope": "global",
+        "type": "double (function)"
+    },
+    {
+        "name": "x",
+        "scope": "square",
+        "type": "double"
+    },
+    {
+        "name": "main",
+        "scope": "global",
+        "type": "int (function)"
+    }
+]

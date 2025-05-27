@@ -1,0 +1,241 @@
+{
+    "children": [
+        {
+            "children": [],
+            "name": "Include: #include <iostream>"
+        },
+        {
+            "children": [],
+            "name": "Using: namespace std"
+        },
+        {
+            "children": [
+                {
+                    "children": [],
+                    "name": "ReturnType: int"
+                },
+                {
+                    "children": [],
+                    "name": "FunctionName: square"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "int x"
+                        }
+                    ],
+                    "name": "Parameters"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [],
+                                                    "name": "Value: x"
+                                                }
+                                            ],
+                                            "name": "Expr"
+                                        },
+                                        {
+                                            "children": [],
+                                            "name": "Op: *"
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [],
+                                                    "name": "Value: x"
+                                                }
+                                            ],
+                                            "name": "Expr"
+                                        }
+                                    ],
+                                    "name": "Expr"
+                                }
+                            ],
+                            "name": "Return"
+                        }
+                    ],
+                    "name": "Body"
+                }
+            ],
+            "name": "Function"
+        },
+        {
+            "children": [
+                {
+                    "children": [],
+                    "name": "ReturnType: double"
+                },
+                {
+                    "children": [],
+                    "name": "FunctionName: square"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "double x"
+                        }
+                    ],
+                    "name": "Parameters"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [],
+                                                    "name": "Value: x"
+                                                }
+                                            ],
+                                            "name": "Expr"
+                                        },
+                                        {
+                                            "children": [],
+                                            "name": "Op: *"
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [],
+                                                    "name": "Value: x"
+                                                }
+                                            ],
+                                            "name": "Expr"
+                                        }
+                                    ],
+                                    "name": "Expr"
+                                }
+                            ],
+                            "name": "Return"
+                        }
+                    ],
+                    "name": "Body"
+                }
+            ],
+            "name": "Function"
+        },
+        {
+            "children": [
+                {
+                    "children": [],
+                    "name": "ReturnType: int"
+                },
+                {
+                    "children": [],
+                    "name": "FunctionName: main"
+                },
+                {
+                    "children": [],
+                    "name": "Parameters"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "Callee: square"
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [
+                                                        {
+                                                            "children": [],
+                                                            "name": "Value: 4"
+                                                        }
+                                                    ],
+                                                    "name": "Expr"
+                                                }
+                                            ],
+                                            "name": "Arguments"
+                                        }
+                                    ],
+                                    "name": "FunctionCall"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "Value: endl"
+                                        }
+                                    ],
+                                    "name": "Expr"
+                                }
+                            ],
+                            "name": "Cout"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "Callee: square"
+                                        },
+                                        {
+                                            "children": [
+                                                {
+                                                    "children": [
+                                                        {
+                                                            "children": [],
+                                                            "name": "Value: 2.5"
+                                                        }
+                                                    ],
+                                                    "name": "Expr"
+                                                }
+                                            ],
+                                            "name": "Arguments"
+                                        }
+                                    ],
+                                    "name": "FunctionCall"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "Value: endl"
+                                        }
+                                    ],
+                                    "name": "Expr"
+                                }
+                            ],
+                            "name": "Cout"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "Value: 0"
+                                        }
+                                    ],
+                                    "name": "Expr"
+                                }
+                            ],
+                            "name": "Return"
+                        }
+                    ],
+                    "name": "Body"
+                }
+            ],
+            "name": "Function"
+        }
+    ],
+    "name": "Program"
+}
