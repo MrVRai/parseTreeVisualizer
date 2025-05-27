@@ -764,4 +764,70 @@ void simulateExecution(const Node &node, unordered_map<string, int> &vars)
         }
     }
 }
+int main()
+{
+    ifstream file("input.cpp");
+    if (!file.is_open())
+    {
+        cerr << "Failed to open input.cpp\n";
+        return 1;
+    }
+    stringstream buffer;
+    buffer << file.rdbuf();
+    string code = buffer.str();
+
+    try
+    {
+        auto tokens = tokenize(code);
+        Parser parser(tokens);
+        Node tree = parser.parse();
+        json output = nodeToJson(tree);
+
+        // Simulate execution starting from main
+        for (const auto &func : allFunctions)
+        {
+            for (const auto &fchild : func.children)
+            {
+                if (fchild.label == "FunctionName: main")
+                {
+                    unordered_map<string, int> vars;
+                    simulateExecution(func, vars);
+                }
+            }
+        }
+
+        // Write parse tree
+        ofstream out("tree.json");
+        out << output.dump(4);
+
+        // Write trace
+        ofstream traceOut("trace.json");
+        traceOut << json(trace).dump(4);
+
+        // Write symbol table
+        json symtab = json::array();
+        for (const auto &entry : symbolTable)
+        {
+            json row;
+            row["name"] = entry.name;
+            row["type"] = entry.type;
+            row["scope"] = entry.scope;
+            if (entry.hasValue)
+                row["value"] = entry.value;
+            symtab.push_back(row);
+        }
+        ofstream symtabOut("symbol_table.json");
+        symtabOut << symtab.dump(4);
+
+        cout << "\nParse tree generated and saved to tree.json\n";
+        cout << "Execution trace generated and saved to trace.json\n";
+        cout << "Symbol table generated and saved to symbol_table.json\n";
+    }
+    catch (const exception &e)
+    {
+        cerr << "Error: " << e.what() << endl;
+        return 1;
+    }
+    return 0;
+}
 
